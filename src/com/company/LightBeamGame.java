@@ -5,7 +5,7 @@ package com.company;
  */
 public class LightBeamGame {
 
-    public static enum STATE {
+    public enum STATE {
 
         INIT,
         CHANGE_SCREEN,
