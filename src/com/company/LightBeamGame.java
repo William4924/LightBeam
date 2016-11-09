@@ -5,7 +5,39 @@ package com.company;
  */
 public class LightBeamGame {
 
+    public static enum STATE {
+
+        INIT,
+        CHANGE_SCREEN,
+        WAIT
+    }
+
+    public static STATE currentState = STATE.INIT;
     public static StringBuilder mapText = new StringBuilder("");
+
+    public static void runGame() {
+
+        while (true) {
+
+            switch (currentState) {
+
+                case INIT:
+
+                    drawOuterWalls();
+                    currentState = STATE.CHANGE_SCREEN;
+
+                    break;
+
+                case CHANGE_SCREEN:
+
+                    break;
+
+                case WAIT:
+
+                    break;
+            }
+        }
+    }
 
     public static void drawOuterWalls() {
 
