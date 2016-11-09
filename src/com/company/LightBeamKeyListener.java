@@ -11,6 +11,7 @@ public class LightBeamKeyListener implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
 
+
     }
 
     @Override

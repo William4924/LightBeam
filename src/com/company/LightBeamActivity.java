@@ -12,8 +12,9 @@ public class LightBeamActivity {
 
     public static void main(String[] args) {
 
+        LightBeamGame.drawOuterWalls();
         setupGUI();
-        screenDisplay.setText("TEST");
+        screenDisplay.setText(LightBeamGame.mapText.toString());
     }
 
     public static void setupGUI() {
